@@ -44,9 +44,13 @@ It is containerized with **Docker** and supports deployment on cloud platforms.
 ## 📂 Project Structure
 
 NexusFinanceBank1/
+
 │── docker-NexusBankBackend/ # Spring Boot backend
+
 │── docker-bank-frontend/ # React frontend
+
 │── docker-compose.yml # Docker Compose setup
+
 │── docker/ # Additional Docker configs
 
 ---
