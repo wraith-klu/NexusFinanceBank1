@@ -1,0 +1,150 @@
+.transfer-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;    /* vertically center */
+  justify-content: center; /* horizontally center */
+  padding: 24px;
+  /* white background for form pages (login/register kept separate) */
+  background: #ffffff;
+  box-sizing: border-box;
+}
+
+/* ensure transfer-card stays contrasted */
+.transfer-card {
+  background: #ffffff; /* keep card white with subtle shadow (unchanged) */
+  color: #071334;
+}
+
+/* Centered card */
+.transfer-card {
+  width: 100%;
+  max-width: 450px; /* per spec */
+  border-radius: 16px; /* rounded corners */
+  padding: 28px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15); /* subtle shadow */
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+/* slight lift on hover/focus for modern feel */
+.transfer-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.22);
+}
+
+/* Heading: green, bold */
+.transfer-title {
+  color: #059669; /* green */
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin: 0 0 18px 0;
+  text-align: left;
+}
+
+/* Form layout */
+.transfer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Labels */
+.field-label {
+  font-size: 0.9rem;
+  color: #475569;
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+/* Inputs: smooth borders, padding, rounded edges */
+.input-field {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(14,20,30,0.08);
+  box-sizing: border-box;
+  font-size: 1rem;
+  transition: box-shadow .16s ease, border-color .16s ease, transform .08s ease;
+  outline: none;
+  background: #fff;
+  color: #0b1220;
+}
+
+/* Focus: change border color with glow */
+.input-field:focus {
+  border-color: rgba(59,130,246,0.9);
+  box-shadow: 0 6px 20px rgba(59,130,246,0.12);
+  transform: translateY(-1px);
+}
+
+/* Placeholder styling for subtlety */
+.input-field::placeholder {
+  color: #94a3b8;
+}
+
+/* Transfer button: blue-to-green gradient, rounded, bold white text */
+.transfer-btn {
+  margin-top: 10px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 0;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem;
+  background: linear-gradient(90deg, #3b82f6 0%, #10b981 100%); /* blue -> green */
+  box-shadow: 0 10px 30px rgba(16,24,40,0.12);
+  cursor: pointer;
+  transition: transform .12s ease, background .18s ease, box-shadow .18s ease;
+}
+
+/* Hover: slightly enlarge and reverse the gradient */
+.transfer-btn:hover:not(:disabled) {
+  transform: translateY(-3px) scale(1.02);
+  background: linear-gradient(90deg, #10b981 0%, #3b82f6 100%); /* reversed */
+  box-shadow: 0 18px 40px rgba(16,24,40,0.18);
+}
+
+/* Disabled state */
+.transfer-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Success toast styling */
+.success-toast {
+  position: fixed;
+  left: 50%;
+  top: 16%;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, #059669, #10b981);
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(2,6,23,0.35);
+  font-weight: 700;
+  z-index: 1400;
+  animation: toast-in 360ms ease-out;
+}
+
+@keyframes toast-in {
+  from { transform: translateX(-50%) translateY(-8px); opacity: 0; }
+  to   { transform: translateX(-50%) translateY(0); opacity: 1; }
+}
+
+/* Footer styles (transfer page) */
+.site-footer { margin-top: 36px; padding-top: 18px; border-top: 1px solid rgba(15,23,42,0.03); }
+.footer-logo { height: 48px; }
+.footer-col h4 { font-size: 0.98rem; }
+.footer-bottom { font-size: 0.9rem; color: #64748b; }
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .transfer-card {
+    padding: 20px;
+    max-width: 100%;
+    border-radius: 12px;
+  }
+  .transfer-title { font-size: 1.25rem; }
+  .input-field { padding: 10px 12px; font-size: 0.98rem; }
+  .transfer-btn { padding: 12px; font-size: 0.98rem; }
+}

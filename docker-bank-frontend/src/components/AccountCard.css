@@ -1,0 +1,89 @@
+.account-card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  /* soft gradient background for premium/clean look */
+  background: linear-gradient(180deg, #f0f6ff 0%, #ffffff 100%);
+  border-radius: 16px; /* increased radius */
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15); /* subtle shadow */
+  transition: transform .18s cubic-bezier(.2,.9,.2,1), box-shadow .18s ease;
+  border: 1px solid rgba(14,20,30,0.04);
+  text-align: left;
+}
+
+.account-card:hover,
+.account-card:focus-within {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 22px 48px rgba(0,0,0,0.22);
+}
+
+.account-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #071334;
+  text-align: left;
+}
+
+.account-balance {
+  margin-top: 15px;
+}
+
+.balance-label {
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.balance-amount {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--primary-blue);
+  margin-top: 6px;
+  text-align: left;
+}
+
+.balance-encrypted {
+  margin-top: 8px;
+  background: rgba(15,23,42,0.03);
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  color: #475569;
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.balance-encrypted .mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
+  color: #233044;
+  margin-left: 8px;
+}
+
+/* keep button aligned to bottom-right on larger screens */
+.view-details-btn {
+  margin-top: 18px;
+  align-self: flex-end;
+}
+
+/* Animation */
+@keyframes slide-in {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* smaller screens */
+@media (max-width:720px){
+  .account-card { padding: 14px; }
+  .balance-amount { font-size: 1.3rem; }
+}

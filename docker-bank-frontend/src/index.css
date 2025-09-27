@@ -1,0 +1,153 @@
+:root {
+  --primary-color: #6a1b9a; /* Deep purple */
+  --secondary-color: #9c27b0; /* Lighter purple */
+  --accent-color: #fdd835; /* Yellow for accents */
+  --text-color: #0b1220; /* dark text for white backgrounds */
+  --bg-color: #4a148c; /* Darker purple for background */
+  --card-bg-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  --shadow-color: rgba(0, 0, 0, 0.3);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html, #root {
+  height: 100%;
+  /* switch to white background for all pages by default */
+  background: #ffffff;
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+
+/* Animated Background: use same image (keeps previous animation wrapper but reuses background.jpg) */
+.animated-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /* use same shared background image so visuals are consistent across pages */
+  background-image: url('/assets/background.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* subtle parallax-like animation by shifting position */
+  animation: bg-shift 18s linear infinite;
+  opacity: 0.06; /* very subtle so page appears white */
+}
+
+@keyframes bg-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Common Styles */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.card {
+  background: var(--card-bg-color);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 25px var(--shadow-color);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 50px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  transform: translateY(-2px);
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-color);
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.form-group input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+  box-shadow: 0 0 10px rgba(253, 216, 53, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    padding: 20px;
+  }
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

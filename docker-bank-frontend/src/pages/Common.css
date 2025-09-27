@@ -1,0 +1,75 @@
+.common-page {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  margin-bottom: 40px;
+}
+
+.logo {
+  width: 150px;
+  animation: logo-pop 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+}
+
+.logo-title {
+  font-size: 3em;
+  margin-top: 20px;
+  color: var(--accent-color);
+  text-shadow: 0 0 10px rgba(253, 216, 53, 0.5);
+  animation: fade-in 1s ease-in-out forwards;
+}
+
+.tagline {
+  font-size: 1.2em;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 10px;
+  animation: fade-in 1.5s ease-in-out forwards;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* Animations */
+@keyframes logo-pop {
+  from {
+    transform: scale(0.5) rotate(-30deg);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .logo {
+    width: 120px;
+  }
+  .logo-title {
+    font-size: 2em;
+  }
+  .tagline {
+    font-size: 1em;
+  }
+}
