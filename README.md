@@ -43,6 +43,11 @@ It is containerized with **Docker** and supports deployment on cloud platforms.
 
 ## 📂 Project Structure
 
+NexusFinanceBank1/
+│── docker-NexusBankBackend/ # Spring Boot backend
+│── docker-bank-frontend/ # React frontend
+│── docker-compose.yml # Docker Compose setup
+│── docker/ # Additional Docker configs
 
 ---
 
@@ -52,3 +57,37 @@ It is containerized with **Docker** and supports deployment on cloud platforms.
 ```bash
 git clone https://github.com/wraith-klu/NexusFinanceBank1.git
 cd NexusFinanceBank1
+
+2️⃣ Run with Docker
+docker compose up --build
+
+3️⃣ Access the Application
+
+Frontend → http://localhost
+
+Backend → http://localhost:2020
+
+Database → localhost:3307
+
+🧑‍💻 Developers
+
+Backend & Database → Java Spring Boot + MySQL
+
+Frontend → React.js
+
+DevOps → Docker & Deployment
+
+✅ To-Do / Future Enhancements
+
+Add JWT-based authentication
+
+Enable role-based access (Admin/User)
+
+Integrate Payment Gateway APIs
+
+Deploy Backend to AWS/GCP
+
+📜 License
+
+This project is for educational purposes.
+Feel free to fork and enhance 🚀
