@@ -42,3 +42,13 @@ It is containerized with **Docker** and supports deployment on cloud platforms.
 ---
 
 ## 📂 Project Structure
+
+
+---
+
+## ⚙️ Setup & Installation
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/wraith-klu/NexusFinanceBank1.git
+cd NexusFinanceBank1
