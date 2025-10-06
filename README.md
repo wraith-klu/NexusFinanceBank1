@@ -72,9 +72,6 @@ It is containerized with **Docker** and supports deployment on cloud platforms, 
 
 - ⚙️ Local & Dockerized Backend + Database
 
-
-
----
 ---
 
 ## 📂 Project Structure
