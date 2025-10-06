@@ -1,25 +1,22 @@
- # 💳 Nexus Finance Bank
+# 💳 Nexus Finance Bank: Full-Stack Banking Application
 
+A robust, full-stack banking application containerized with **Docker** for easy deployment and scalability.
 
+[![React](https://img.shields.io/badge/Frontend-React-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
+[![Spring Boot](https://img.shields.io/badge/Backend-SpringBoot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)](https://spring.io/projects/spring-boot)
+[![MySQL](https://img.shields.io/badge/Database-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
+[![Docker](https://img.shields.io/badge/Containerization-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+[![Vercel](https://img.shields.io/badge/Deployment-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
 
-![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)
+---
 
-![Spring Boot](https://img.shields.io/badge/Backend-SpringBoot-green?logo=springboot)
+## 🌟 Project Summary
 
-![MySQL](https://img.shields.io/badge/Database-MySQL-blue?logo=mysql)
+Nexus Finance Bank is a **Full-Stack Banking Application** that allows users to register, log in, manage accounts, and perform transactions.
 
-![Docker](https://img.shields.io/badge/DevOps-Docker-blue?logo=docker)
+It is containerized with **Docker** and supports deployment on cloud platforms, providing a solid foundation for a modern financial service application.
 
-![Vercel](https://img.shields.io/badge/Deployed-Vercel-black?logo=vercel)
-
-
-
-Nexus Finance Bank is a **Full-Stack Banking Application** that allows users to register, log in, manage accounts, and perform transactions.  
-
-It is containerized with **Docker** and supports deployment on cloud platforms.
-
-
-
+---
 ---
 
 
