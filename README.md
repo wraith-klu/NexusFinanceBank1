@@ -17,9 +17,6 @@ Nexus Finance Bank is a **Full-Stack Banking Application** that allows users to 
 It is containerized with **Docker** and supports deployment on cloud platforms, providing a solid foundation for a modern financial service application.
 
 ---
----
-
-
 
 ## 🚀 Features
 
