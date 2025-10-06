@@ -1,64 +1,86 @@
-# 💳 Nexus Finance Bank: Full-Stack Banking Application
+ # 💳 Nexus Finance Bank
 
-A robust, full-stack banking application containerized with **Docker** for easy deployment and scalability.
 
-[![React](https://img.shields.io/badge/Frontend-React-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
-[![Spring Boot](https://img.shields.io/badge/Backend-SpringBoot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)](https://spring.io/projects/spring-boot)
-[![MySQL](https://img.shields.io/badge/Database-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
-[![Docker](https://img.shields.io/badge/Containerization-Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
-[![Vercel](https://img.shields.io/badge/Deployment-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
 
----
+![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)
 
-## 🌟 Project Summary
+![Spring Boot](https://img.shields.io/badge/Backend-SpringBoot-green?logo=springboot)
 
-Nexus Finance Bank is a **Full-Stack Banking Application** that allows users to register, log in, manage accounts, and perform transactions.
+![MySQL](https://img.shields.io/badge/Database-MySQL-blue?logo=mysql)
 
-It is containerized with **Docker** and supports deployment on cloud platforms, providing a solid foundation for a modern financial service application.
+![Docker](https://img.shields.io/badge/DevOps-Docker-blue?logo=docker)
 
----
+![Vercel](https://img.shields.io/badge/Deployed-Vercel-black?logo=vercel)
 
-## 🚀 Key Features
 
-| Icon | Feature | Description |
-| :---: | :--- | :--- |
-| 🔐 | **User Authentication** | Secure User Registration & Login. |
-| 🏦 | **Account Management** | Comprehensive tools for managing user accounts. |
-| 💸 | **Fund Transfers** | Seamless and reliable fund transfer capabilities. |
-| 📜 | **Transaction History** | Detailed record keeping and history view. |
-| 📊 | **Responsive Frontend** | Modern dashboard built with React.js. |
-| 🐳 | **Dockerized Setup** | Easy setup and deployment using Docker and Docker Compose. |
+
+Nexus Finance Bank is a **Full-Stack Banking Application** that allows users to register, log in, manage accounts, and perform transactions.  
+
+It is containerized with **Docker** and supports deployment on cloud platforms.
+
+
 
 ---
 
-## 🛠️ Technology Stack Breakdown
 
-This project utilizes a modern and robust technology stack across all layers.
 
-### Frontend (User Interface)
-| Technology | Details |
-| :---: | :--- |
-| **⚛️ React.js** | The core library for building the dynamic user interface. |
-| **🎨 CSS** | Custom styling for a unique and responsive design. |
+## 🚀 Features
 
-### Backend (API & Business Logic)
-| Technology | Details |
-| :---: | :--- |
-| **☕ Java Spring Boot** | Used for creating the robust and scalable backend services. |
-| **🔗 REST APIs** | Standardized interface for communication between frontend and backend. |
+- 🔐 User Registration & Login (Authentication)
+
+- 🏦 Account Management
+
+- 💸 Fund Transfers
+
+- 📜 Transaction History
+
+- 📊 Responsive Frontend Dashboard
+
+- 🐳 Dockerized setup for easy deployment
+
+
+
+---
+
+
+
+## 🛠️ Tech Stack
+
+
+
+### Frontend
+
+- ⚛️ React.js
+
+- 🎨 CSS (custom styling)
+
+
+
+### Backend
+
+- ☕ Java Spring Boot
+
+- 🔗 REST APIs
+
+
 
 ### Database
-| Technology | Details |
-| :---: | :--- |
-| **🐬 MySQL 8.0** | The reliable relational database for persistent data storage. |
+
+- 🐬 MySQL 8.0
+
+
 
 ### DevOps / Deployment
-| Technology | Details |
-| :---: | :--- |
-| **🐳 Docker & Docker Compose** | Used to containerize the application for consistent environment setup. |
-| **🌐 Vercel (Frontend)** | Platform for deploying the React frontend. |
-| **⚙️ Local & Dockerized** | The backend and database are set up for local and containerized execution. |
 
+- 🐳 Docker & Docker Compose
+
+- 🌐 Deployed on **Vercel** (Frontend)
+
+- ⚙️ Local & Dockerized Backend + Database
+
+
+
+---
 ---
 
 ## 📂 Project Structure
